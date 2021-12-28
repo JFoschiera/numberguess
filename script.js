@@ -20,12 +20,14 @@ let compareGuesses = (human, compu, secret) => {
 };
 
 let updateScore = (winner) => {
-  if (compareGuesses() === true) {
-    humanScore += 1;
-  } else {
-    computerScore += 1;
-  }
-};
+    if (winner === 'human') {
+        humanScore++;
+    } else if (winner === 'computer') {
+        computerScore++;
+    }
+}
+
+
 
 let advanceRound = () => {
   currentRoundNumber +=1;
