@@ -3,6 +3,7 @@ let computerScore = 0;
 let currentRoundNumber = 1;
 
 // Write your code below:
+
 const generateTarget = () => {
   return Math.floor(Math.random() * 9)
 }
@@ -26,8 +27,6 @@ let updateScore = (winner) => {
         computerScore++;
     }
 }
-
-
 
 let advanceRound = () => {
   currentRoundNumber +=1;
